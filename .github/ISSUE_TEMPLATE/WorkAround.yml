@@ -1,0 +1,32 @@
+name: Workaround
+description: File a workaround
+title: "[Workaround]: "
+labels: ["Workaround"]
+body:
+  - type: input
+    id: discord-conversation-link
+    attributes:
+      label: Link to the conversation on discord
+    validations:
+      required: true
+
+  - type: input
+    id: relevant-mods
+    attributes:
+      label: Relevant Mods
+      description: If applicable, list any mods this workaround applies to
+    
+  - type: textarea
+    id: discord-conversation-body
+    attributes:
+      label: Describe the workaround
+    validations:
+      required: true
+    
+  - type: textarea
+    id: logs
+    attributes:
+      label: User logs
+      description: Upload the relevant logs here, which are required to ensure the context of the workaround is entirely understood
+    validations:
+      required: true
